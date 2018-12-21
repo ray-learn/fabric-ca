@@ -1,6 +1,6 @@
 # Fabric CA Developer's Guide
 
-This is the Developer's Guide for Fabric CA, which is a Certificate Authority for Hyperledger Fabric.
+This is the Developer's Guide for Fabric CA, which is a Certificate Authority for Hyperledger Fabric. 超级账本Fabric CA的开发者指导
 
 See [User's Guide for Fabric CA](https://hyperledger-fabric-ca.readthedocs.io) for information on how to use Fabric CA.
 

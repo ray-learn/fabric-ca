@@ -36,6 +36,7 @@ const (
 
 // ServerCmd encapsulates cobra command that provides command line interface
 // for the Fabric CA server and the configuration used by the Fabric CA server
+// ServerCmd封装cobra命令，提供Fabric CA服务端的命令行接口和配置
 type ServerCmd struct {
 	// name of the fabric-ca-server command (init, start, version)
 	name string
@@ -71,7 +72,7 @@ func (s *ServerCmd) Execute() error {
 
 // init initializes the ServerCmd instance
 // It intializes the cobra root and sub commands and
-// registers command flgs with viper
+// registers command flgs with viper 初始化，注册标志
 func (s *ServerCmd) init() {
 	// root command
 	rootCmd := &cobra.Command{
@@ -174,6 +175,7 @@ func (s *ServerCmd) registerFlags() {
 }
 
 // Configuration file is not required for some commands like version
+// 某些命令不需要配置文件，如version
 func (s *ServerCmd) configRequired() bool {
 	return s.name != version
 }

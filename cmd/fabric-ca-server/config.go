@@ -482,7 +482,7 @@ var (
 	extraArgsError = "Unrecognized arguments found: %v\n\n%s"
 )
 
-// Initialize config
+// Initialize config 初始化配置
 func (s *ServerCmd) configInit() (err error) {
 	if !s.configRequired() {
 		return nil
